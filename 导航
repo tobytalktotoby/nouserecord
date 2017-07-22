@@ -1,0 +1,45 @@
+# nouserecord
+偶尔写个代码
+----------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+    <style>这个东西。。。。
+        a:hover, a:active {
+            background-color: #cc0000;
+        }
+    </style>
+    <script src="nav.js"></script>
+</head>
+
+
+<body onload="createnav()">
+
+<nav id="nav">
+
+
+</nav>
+
+</body>
+</html>
+
+
+--------------------filename nav.js------
+function createnav() {
+
+     //1
+    newnode("t", "http://www.t.cn/");
+    newnode("a", "http://www.a.cn/");
+    newnode("b", "https://www.b.com/");
+
+}
+function newnode(xa,xb) {我就是喜欢有数字在变量里
+    var a1 = document.getElementById("nav");
+    var b1 = document.createElement("a");
+    var c1 = document.createTextNode(" "+xa+" ");
+
+    b1.appendChild(c1);
+    a1.appendChild(b1);
+    b1.setAttribute("href", xb);
+
+}
